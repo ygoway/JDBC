@@ -79,6 +79,7 @@ public class Tables {
             Statement statement = connection.createStatement();
             statement.executeUpdate(sql);
 
+
             statement.close();
             connection.close();
             System.out.println("Was added to table : " + sql);
@@ -128,7 +129,7 @@ public class Tables {
 
             statement.close();
             connection.close();
-            System.out.println("Deleted from table : " + sql);
+            System.out.println("DROP : " + sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
