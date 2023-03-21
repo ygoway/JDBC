@@ -20,8 +20,6 @@ public class UserServiceImpl implements UserService {
                 String seats = resultSet.getString("seats");
                 System.out.println("Plane model : " + model + ", total seats : " + seats);
             }
-            statement.close();
-            connection.close();
         }
     }
 
@@ -40,8 +38,6 @@ public class UserServiceImpl implements UserService {
                 System.out.println("Pilot name : " + name + ", pilot age : " + age
                         + "plane that can fly : " + planeThatCanFly);
             }
-            statement.close();
-            connection.close();
         }
     }
 
