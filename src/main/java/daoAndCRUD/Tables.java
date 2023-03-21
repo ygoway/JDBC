@@ -17,7 +17,6 @@ public class Tables {
             statement.executeUpdate(sql);
 
             statement.close();
-            connection.close();
             System.out.println("Creating table " + sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -36,7 +35,6 @@ public class Tables {
             statement.executeUpdate(sql);
 
             statement.close();
-            connection.close();
             System.out.println("Creating table " + sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -58,7 +56,6 @@ public class Tables {
             statement.executeUpdate(sql);
 
             statement.close();
-            connection.close();
             System.out.println("Was added to table : " + sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -79,9 +76,7 @@ public class Tables {
             Statement statement = connection.createStatement();
             statement.executeUpdate(sql);
 
-
             statement.close();
-            connection.close();
             System.out.println("Was added to table : " + sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -98,7 +93,6 @@ public class Tables {
             statement.executeUpdate(sql);
 
             statement.close();
-            connection.close();
             System.out.println("Changes : " + sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -113,7 +107,6 @@ public class Tables {
             statement.executeUpdate(sql);
 
             statement.close();
-            connection.close();
             System.out.println("Deleted from table : " + sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -128,7 +121,6 @@ public class Tables {
             statement.executeUpdate(sql);
 
             statement.close();
-            connection.close();
             System.out.println("DROP : " + sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
